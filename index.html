@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -1340,9 +1338,8 @@
     </div>
 
     <script>
-        // Menu Data
-        const data =
-[
+        // Menu Data - FIXED VERSION
+        const data = [
   { "id": 1, "cat": "CHINESE_SOUP", "name": "Chicken Manchow Soup", "price": "120 RS", "desc": "Spicy chicken soup topped with fried noodles", "tags": ["Non-Veg"], "img": "img/chicken_manchow_soup.jpeg" },
   { "id": 2, "cat": "CHINESE_SOUP", "name": "Chicken Clear Soup", "price": "120 RS", "desc": "Healthy and mild clear chicken soup", "tags": ["Non-Veg"], "img": "img/chicken_clear_soup.jpeg" },
   { "id": 3, "cat": "CHINESE_SOUP", "name": "Chicken Hot N Sour Soup", "price": "120 RS", "desc": "Spicy and tangy chicken soup", "tags": ["Non-Veg"], "img": "img/chicken_hot_n_sour.jpeg" },
@@ -1364,9 +1361,7 @@
   { "id": 19, "cat": "CHINESE_RICE", "name": "Chicken Triple Rice", "price": "280 RS", "desc": "Rice served with spicy gravy and omelette", "tags": ["Non-Veg"], "img": "img/chicken_triple_rice.jpeg" },
   { "id": 20, "cat": "CHINESE_RICE", "name": "Chicken Singapore Rice", "price": "250 RS", "desc": "Mild yellow spiced fried rice with chicken", "tags": ["Non-Veg"], "img": "img/chicken_singapore_rice.jpeg" },
   { "id": 21, "cat": "CHINESE_RICE", "name": "Chicken Burnt Garlic Rice", "price": "250 RS", "desc": "Fried rice flavored with burnt garlic", "tags": ["Non-Veg"], "img": "img/chicken_burnt_garlic_rice.jpeg" },
-  { "id": 22, "cat": "CHINESE_RICE", "name": "Chicken Manchurian Rice", "price": "250 RS", "desc": "Fried rice tossed with chicken manchurian balls", "tags": ["Non-Veg"], "img": "img/chicken_manchurian_rice.jpeg" };
-
-
+  { "id": 22, "cat": "CHINESE_RICE", "name": "Chicken Manchurian Rice", "price": "250 RS", "desc": "Fried rice tossed with chicken manchurian balls", "tags": ["Non-Veg"], "img": "img/chicken_manchurian_rice.jpeg" },
 
   { "id": 23, "cat": "CHINESE_SOUP", "name": "Veg Manchow Soup", "price": "120 RS", "desc": "Spicy vegetable soup topped with fried noodles", "tags": ["Veg"], "img": "img/veg_manchow_soup.jpeg" },
   { "id": 24, "cat": "CHINESE_SOUP", "name": "Veg Clear Soup", "price": "120 RS", "desc": "Healthy clear soup with fresh veggies", "tags": ["Veg"], "img": "img/veg_clear_soup.jpeg" },
@@ -1399,47 +1394,42 @@
   { "id": 51, "cat": "CHINESE_RICE", "name": "Veg Singapore Rice", "price": "220 RS", "desc": "Mild yellow spiced fried rice", "tags": ["Veg"], "img": "img/veg_singapore_rice.jpeg" },
   { "id": 52, "cat": "CHINESE_GRAVY", "name": "Paneer Chilli Gravy", "price": "250 RS", "desc": "Paneer chilli in thick spicy gravy", "tags": ["Veg"], "img": "img/paneer_chilli_gravy.jpeg" },
 
-    
-  //   { 
-  //   "id": 53, 
-  //   "cat": "SPECIAL_PACKAGE", 
-  //   "name": "Full Day Veg Menu Package (1000 Veg Menu)", 
-  //   "price": "1000 RS", 
-  //   "desc": "Complete day meal plan including: \n1. Breakfast (Choose 1): Poha, Upma, Puri Bhaji, Sandwich, Misal Pav, or Paratha. \n2. Lunch: Paneer Butter Masala/Lababdar/Makhani, Mix Veg/Kolhapuri/Jeera Aloo, Dal Tadka/Fry, Rice, Roti, Gulab Jamun/Ice Cream. \n3. Hi-Tea: Tea/Coffee, Sandwich, Mix Pakora. \n4. Dinner: Paneer Kadai/Kolhapuri, Veg Handi, Dal, Rice, Roti, Dessert. \n(Note: Lunch/Dinner can be swapped for Pav Bhaji or Dum Biryani)", 
-  //   "tags": ["Veg", "Catering"], 
-  //   "img": "img/full_day_veg_menu.jpeg" 
-  // };
-
-  //     { 
-  //   "id": 54, 
-  //   "cat": "SPECIAL_PACKAGE", 
-  //   "name": "Full Day Non-Veg Menu Package (Non Veg @ 800)", 
-  //   "price": "800 RS", 
-  //   "desc": "Complete day meal plan including: \n1. Breakfast (Choose 1): Bhurji Pav, Omelette Pav, Poha, Upma, or Misal Pav. \n2. Hi-Tea: Tea/Coffee & Mix Bhaji. \n3. Lunch: Chicken Handi/Chicken Homely, Steam/Jeera Rice, Chapati/Bhakri. \n4. Dinner: Chicken Malwani/Chicken Curry, Steam/Jeera Rice, Chapati/Bhakri/Tandoori Roti. \n(Note: Lunch or Dinner can be swapped for Dum Biryani)", 
-  //   "tags": ["Non-Veg", "Catering"], 
-  //   "img": "img/full_day_non_veg_menu.jpeg" 
-  // };
-
-  //     { 
-  //   "id": 55, 
-  //   "cat": "SPECIAL_PACKAGE", 
-  //   "name": "Premium Full Day Non-Veg Package (@ 1000 Non Veg Menu)", 
-  //   "price": "1000 RS", 
-  //   "desc": "Complete premium day meal plan including: \n1. Breakfast (Choose 1): Bhurji Pav, Omelette Pav, Butter Bread, Poha, Upma, or Misal Pav. \n2. Lunch: Kadai Chicken/Butter Chicken/Homely Chicken, Steam/Jeera Rice, Bhakri/Chapati, Salad, Gulab Jamun/Ice Cream. \n3. Hi-Tea: Tea/Coffee, Sandwich, 1 Butter Bread. \n4. Dinner: Chicken Lababdar/Malwani/Masala/Handi, Steam/Jeera Rice, 1 Bhakri/Tandoori Roti Butter. \n(Note: Lunch or Dinner can be swapped for Chicken Keema Pav or Chicken Dum Biryani)", 
-  //   "tags": ["Non-Veg", "Catering"], 
-  //   "img": "img/full_day_non_veg_1000_menu.jpeg" 
-  // };
-
-  //     { 
-  //   "id": 56, 
-  //   "cat": "SPECIAL_PACKAGE", 
-  //   "name": "Full Day Veg Menu Package (Veg @ 800)", 
-  //   "price": "800 RS", 
-  //   "desc": "Complete day meal plan including: \n1. Breakfast (Choose 1): Poha, Upma, Puri Bhaji, or Misal Pav. \n2. Lunch: Mutter Paneer/Paneer Masala/Veg Kolhapuri, Dal Fry/Tadka, Steam/Jeera Rice, Chapati/Tandoori Roti/Bhakri. \n3. Hi-Tea: Tea/Coffee, Kanda Bhaji/Batata Bhaji/Mix Bhaji. \n4. Dinner: Paneer Masala/Mix Veg/Veg Handi, Dal Fry, Steam/Jeera Rice, Chapati/Tandoori Roti/Bhakri, Sweet (Gulab Jamun/Ice Cream). \n(Note: You can change the menu to Biryani for Lunch or Dinner)", 
-  //   "tags": ["Veg", "Catering"], 
-  //   "img": "img/full_day_veg_800_menu.jpeg" 
-  // };
-
+  { 
+    "id": 53, 
+    "cat": "SPECIAL_PACKAGE", 
+    "name": "Full Day Veg Menu Package (1000 Veg Menu)", 
+    "price": "1000 RS", 
+    "desc": "Complete day meal plan including: \n1. Breakfast (Choose 1): Poha, Upma, Puri Bhaji, Sandwich, Misal Pav, or Paratha. \n2. Lunch: Paneer Butter Masala/Lababdar/Makhani, Mix Veg/Kolhapuri/Jeera Aloo, Dal Tadka/Fry, Rice, Roti, Gulab Jamun/Ice Cream. \n3. Hi-Tea: Tea/Coffee, Sandwich, Mix Pakora. \n4. Dinner: Paneer Kadai/Kolhapuri, Veg Handi, Dal, Rice, Roti, Dessert. \n(Note: Lunch/Dinner can be swapped for Pav Bhaji or Dum Biryani)", 
+    "tags": ["Veg", "Catering"], 
+    "img": "img/full_day_veg_menu.jpeg" 
+  },
+  { 
+    "id": 54, 
+    "cat": "SPECIAL_PACKAGE", 
+    "name": "Full Day Non-Veg Menu Package (Non Veg @ 800)", 
+    "price": "800 RS", 
+    "desc": "Complete day meal plan including: \n1. Breakfast (Choose 1): Bhurji Pav, Omelette Pav, Poha, Upma, or Misal Pav. \n2. Hi-Tea: Tea/Coffee & Mix Bhaji. \n3. Lunch: Chicken Handi/Chicken Homely, Steam/Jeera Rice, Chapati/Bhakri. \n4. Dinner: Chicken Malwani/Chicken Curry, Steam/Jeera Rice, Chapati/Bhakri/Tandoori Roti. \n(Note: Lunch or Dinner can be swapped for Dum Biryani)", 
+    "tags": ["Non-Veg", "Catering"], 
+    "img": "img/full_day_non_veg_menu.jpeg" 
+  },
+  { 
+    "id": 55, 
+    "cat": "SPECIAL_PACKAGE", 
+    "name": "Premium Full Day Non-Veg Package (@ 1000 Non Veg Menu)", 
+    "price": "1000 RS", 
+    "desc": "Complete premium day meal plan including: \n1. Breakfast (Choose 1): Bhurji Pav, Omelette Pav, Butter Bread, Poha, Upma, or Misal Pav. \n2. Lunch: Kadai Chicken/Butter Chicken/Homely Chicken, Steam/Jeera Rice, Bhakri/Chapati, Salad, Gulab Jamun/Ice Cream. \n3. Hi-Tea: Tea/Coffee, Sandwich, 1 Butter Bread. \n4. Dinner: Chicken Lababdar/Malwani/Masala/Handi, Steam/Jeera Rice, 1 Bhakri/Tandoori Roti Butter. \n(Note: Lunch or Dinner can be swapped for Chicken Keema Pav or Chicken Dum Biryani)", 
+    "tags": ["Non-Veg", "Catering"], 
+    "img": "img/full_day_non_veg_1000_menu.jpeg" 
+  },
+  { 
+    "id": 56, 
+    "cat": "SPECIAL_PACKAGE", 
+    "name": "Full Day Veg Menu Package (Veg @ 800)", 
+    "price": "800 RS", 
+    "desc": "Complete day meal plan including: \n1. Breakfast (Choose 1): Poha, Upma, Puri Bhaji, or Misal Pav. \n2. Lunch: Mutter Paneer/Paneer Masala/Veg Kolhapuri, Dal Fry/Tadka, Steam/Jeera Rice, Chapati/Tandoori Roti/Bhakri. \n3. Hi-Tea: Tea/Coffee, Kanda Bhaji/Batata Bhaji/Mix Bhaji. \n4. Dinner: Paneer Masala/Mix Veg/Veg Handi, Dal Fry, Steam/Jeera Rice, Chapati/Tandoori Roti/Bhakri, Sweet (Gulab Jamun/Ice Cream). \n(Note: You can change the menu to Biryani for Lunch or Dinner)", 
+    "tags": ["Veg", "Catering"], 
+    "img": "img/full_day_veg_800_menu.jpeg" 
+  },
       
   { "id": 57, "cat": "DAL", "name": "Dal Fry", "price": "150 RS", "desc": "Yellow lentils tempered with mild spices", "tags": ["Veg"], "img": "img/dal_fry.jpeg" },
   { "id": 58, "cat": "DAL", "name": "Dal Tadka", "price": "180 RS", "desc": "Yellow lentils with spicy garlic and chili tempering", "tags": ["Veg"], "img": "img/dal_tadka.jpeg" },
@@ -1610,8 +1600,9 @@
   { "id": 212, "cat": "MUTTON_MAIN_COURSE", "name": "Mutton Kala Masala Handi (Full)", "price": "950 RS", "desc": "Mutton cooked in authentic black masala gravy (Full)", "tags": ["Non-Veg"], "img": "img/mutton_kala_masala_handi.jpeg" },
   { "id": 213, "cat": "MUTTON_MAIN_COURSE", "name": "Mutton Korma", "price": "350 RS", "desc": "Rich and creamy mild mutton curry", "tags": ["Non-Veg"], "img": "img/mutton_korma.jpeg" },
   { "id": 214, "cat": "RICE_BIRYANI", "name": "Mutton Biryani (Portion)", "price": "380 RS", "desc": "Classic aromatic mutton biryani", "tags": ["Non-Veg"], "img": "img/mutton_biryani.jpeg" },
-  { "id": 215, "cat": "RICE_BIRYANI", "name": "Mutton Biryani (1 Kg)", "price": "1400 RS", "desc": "Family Pack - 1 Kg Mutton Biryani", "tags": ["Non-Veg"], "img": "img/mutton_biryani_1kg.jpeg" }, 
-    ];
+  { "id": 215, "cat": "RICE_BIRYANI", "name": "Mutton Biryani (1 Kg)", "price": "1400 RS", "desc": "Family Pack - 1 Kg Mutton Biryani", "tags": ["Non-Veg"], "img": "img/mutton_biryani_1kg.jpeg" }
+        ];
+        
         // Cart functionality
         let cart = [];
         let deliveryType = 'restaurant'; // Default to restaurant
@@ -1996,4 +1987,3 @@
 </body>
 
 </html>
-
